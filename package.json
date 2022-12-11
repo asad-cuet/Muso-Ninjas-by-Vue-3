@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "firebase": "^9.15.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
@@ -41,5 +42,17 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asad-cuet/Muso-Ninjas-by-Vue-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asad-cuet/Muso-Ninjas-by-Vue-3/issues"
+  },
+  "homepage": "https://github.com/Asad-cuet/Muso-Ninjas-by-Vue-3#readme"
 }

@@ -3,7 +3,7 @@ import 'firebase/compat/firestore'
 import 'firebase/compat/auth'    
 
 
-const firebaseConfig = {
+const firebaseConfig = {                                  // on project changing, update this section
     apiKey: "AIzaSyD6oSuNeAUBpjcYNULIdVsL12tsglWGaDk",
     authDomain: "muso-ninjas-72348.firebaseapp.com",
     projectId: "muso-ninjas-72348",
