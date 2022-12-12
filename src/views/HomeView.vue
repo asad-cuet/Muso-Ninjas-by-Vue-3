@@ -1,15 +1,16 @@
 <template>
-  <div class="home">
-      <p>Home Page</p>
+  <div class="home" style="text-align: center;">
+      <h3>Home Page</h3>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
-
 export default {
   name: 'HomeView',
+  setup()
+  {
+
+  },
   components: {
 
   }

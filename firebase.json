@@ -4,6 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "site": "muso-ninjas-72348",
     "public": "dist",
     "ignore": [
       "firebase.json",

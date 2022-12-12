@@ -1,5 +1,9 @@
 # muso-ninjas
 
+## Live URL
+
+https://muso-ninjas-72348.web.app
+
 ## Project setup
 ```
 npm install
