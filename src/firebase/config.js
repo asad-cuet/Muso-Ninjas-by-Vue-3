@@ -1,6 +1,7 @@
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import 'firebase/compat/auth'    
+import 'firebase/compat/storage'    
 
 
 const firebaseConfig = {                                  // on project changing, update this section
@@ -20,7 +21,9 @@ const firebaseConfig = {                                  // on project changing
 
  const projectFirestore= firebase.firestore()
 
+ const projectStorage= firebase.storage()
+
  // for store timestamp
  const timestamp=firebase.firestore.FieldValue.serverTimestamp   //Optional, if you want to make timestamp column
 
- export { projectAuth,projectFirestore, timestamp }  
+ export { projectAuth, projectFirestore, projectStorage, timestamp }  

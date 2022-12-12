@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import Login from '@/views/auth/Login.vue'
 import Signup from '@/views/auth/Signup.vue'
+import CreatePlaylist from '@/views/playlists/CreatePlaylist.vue'
 
 
 
@@ -55,6 +56,15 @@ const routes = [
     name: 'signup',
     component: Signup,
     beforeEnter: isAuth
+  },
+
+
+
+  {
+    path: '/playlists/create',
+    name: 'createPlaylist',
+    component: CreatePlaylist
+    // beforeEnter: requireAuth
   }
 ]
 
