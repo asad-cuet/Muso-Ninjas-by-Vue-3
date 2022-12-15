@@ -6,6 +6,7 @@
 
             <div class="links">
                 <div v-if="user">
+                    <router-link class="btn" :to="{name:'createPlaylist'}">Create Playlist</router-link>
                     <button v-if="!isPending" @click="handleClick">Logout</button>
                     <button v-if="isPending" disabled>Logout</button>
                 </div>

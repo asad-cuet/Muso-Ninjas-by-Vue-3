@@ -5,6 +5,7 @@ import HomeView from '@/views/HomeView.vue'
 import Login from '@/views/auth/Login.vue'
 import Signup from '@/views/auth/Signup.vue'
 import CreatePlaylist from '@/views/playlists/CreatePlaylist.vue'
+import PlaylistDetails from '@/views/playlists/PlaylistDetails.vue'
 
 
 
@@ -63,9 +64,17 @@ const routes = [
   {
     path: '/playlists/create',
     name: 'createPlaylist',
-    component: CreatePlaylist
-    // beforeEnter: requireAuth
+    component: CreatePlaylist,
+    beforeEnter: requireAuth
+  },
+  {
+    path: '/playlists/:id',
+    name: 'playlistDetails',
+    component: PlaylistDetails,
+    props:true,
+    beforeEnter: requireAuth
   }
+
 ]
 
 const router = createRouter({

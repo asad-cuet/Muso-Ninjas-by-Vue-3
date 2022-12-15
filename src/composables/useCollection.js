@@ -13,8 +13,9 @@ const useCollection=(collection)=>{   //colection table name, passed during func
           isPending.value=true
           try
           {
-              await projectFirestore.collection(collection).add(doc)
+              const res = await projectFirestore.collection(collection).add(doc)
               isPending.value=false
+              return res
           }
           catch(err)
           {

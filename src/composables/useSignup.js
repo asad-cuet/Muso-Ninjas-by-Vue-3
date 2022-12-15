@@ -4,7 +4,7 @@ import {ref} from 'vue'
 const error=ref(null)
 const isPending=ref(false) 
 
-const signup=async (email,password,name) => {
+const signup=async (email,password,displayName) => {
       error.value=null
       isPending.value=true
        try
@@ -16,7 +16,7 @@ const signup=async (email,password,name) => {
                  throw new Error('Could not complete the signup')
             }
             
-            await res.user.updateProfile({name})
+            await res.user.updateProfile({displayName})
             console.log(res.user)
             isPending.value=false
             return res
