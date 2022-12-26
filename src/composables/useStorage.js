@@ -13,11 +13,12 @@ const useStorage=()=>
 
     const uploadImage=async(file)=>
     {
+        error.value=null
         filePath.value=`covers/${user.value.uid}/${file.name}`
-        const storageREf=projectStorage.ref(filePath.value)
+        const storageRef=projectStorage.ref(filePath.value)
 
         try {
-            const res= await storageREf.put(file)
+            const res= await storageRef.put(file)
             url.value=await res.ref.getDownloadURL()
         }
         catch(err) {
@@ -26,9 +27,22 @@ const useStorage=()=>
         }
     }
 
+    const deleteImage=async(path)=>
+    {
+        error.value=null
+        const storageRef=projectStorage.ref(path)
+        
+        try {
+            await storageRef.delete()
+        } catch(err) {
+            console.log(err.message)
+            error.value=err.message
+        }
+    }
+
 
     return {
-        error,url,filePath,uploadImage
+        error,url,filePath,uploadImage,deleteImage
     }
 }
 

@@ -2,11 +2,16 @@
     <div class="navbar">
         <nav>
             <img src="@/assets/logo.png" alt="">
-            <h1><router-link :to="{name:'home'}">Authenticated</router-link></h1>
+            <h1><router-link :to="{name:'home'}">Muso Ninjas</router-link></h1>
 
             <div class="links">
                 <div v-if="user">
+                    <router-link class="btn" :to="{name:'home'}">Home</router-link>
                     <router-link class="btn" :to="{name:'createPlaylist'}">Create Playlist</router-link>
+                    <router-link class="btn" :to="{name:'userplaylists'}">My Playlists</router-link>
+
+                    <span>Hi here,{{ user.displayName }}</span>
+
                     <button v-if="!isPending" @click="handleClick">Logout</button>
                     <button v-if="isPending" disabled>Logout</button>
                 </div>
@@ -86,4 +91,12 @@ nav .links a,button {
 nav img {
     max-height: 60px;
 } 
+
+span {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #eee;
+}
 </style>
