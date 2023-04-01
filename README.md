@@ -1,6 +1,6 @@
 # muso-ninjas
 
-User can Signup, Signin, create a playlist with image and add multiple song details
+User can Signup, Signin, create a playlist with image and add multiple song details. Below you can see some screenshots of this project
 
 ## Live URL
 
