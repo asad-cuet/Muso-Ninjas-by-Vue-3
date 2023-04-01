@@ -29,7 +29,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
-## Some Screenshot
+## Some Screenshots
 
 <p align="center">
   <img src="https://github.com/asad-cuet/Muso-Ninjas-by-Vue-3/blob/master/public/screenshot/ss1.jpg" width="350" title="hover text">
