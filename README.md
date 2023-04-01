@@ -1,5 +1,7 @@
 # muso-ninjas
 
+User can Signup, Signin, create a playlist with image and add multiple song details
+
 ## Live URL
 
 https://muso-ninjas-72348.web.app
